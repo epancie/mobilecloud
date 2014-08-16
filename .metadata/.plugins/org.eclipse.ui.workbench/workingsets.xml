@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1408230085627_1" label="1-SimpleServlet" name="1-SimpleServlet"/>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1408230129212_2" label="2-VideoServlet" name="2-VideoServlet"/>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1408230168451_3" label="3-VideoControllerAndRetrofit" name="3-VideoControllerAndRetrofit"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1408229927438_0" label="Window Working Set" name="Aggregate for window 1408229927438"/>
+</workingSetManager>
