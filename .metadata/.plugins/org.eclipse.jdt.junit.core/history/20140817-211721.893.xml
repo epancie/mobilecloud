@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="java (1)" project="Asgn1-VideoUp" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="org.magnum.dataup.AutoGradingTest" time="0.107">
+    <testcase name="testAddVideoData" classname="org.magnum.dataup.AutoGradingTest" time="0.065"/>
+    <testcase name="testAddVideoMetadata" classname="org.magnum.dataup.AutoGradingTest" time="0.005"/>
+    <testcase name="testAddNonExistantVideosData" classname="org.magnum.dataup.AutoGradingTest" time="0.018"/>
+    <testcase name="testAddGetVideo" classname="org.magnum.dataup.AutoGradingTest" time="0.01"/>
+    <testcase name="testGetNonExistantVideosData" classname="org.magnum.dataup.AutoGradingTest" time="0.009"/>
+  </testsuite>
+</testrun>

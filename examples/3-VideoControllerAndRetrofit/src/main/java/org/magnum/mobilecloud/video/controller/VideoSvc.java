@@ -2,6 +2,8 @@ package org.magnum.mobilecloud.video.controller;
 
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import org.magnum.mobilecloud.video.client.VideoSvcApi;
 import org.springframework.stereotype.Controller;
@@ -9,6 +11,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+
+
+import com.google.gson.Gson;
 
 /**
  * This simple VideoSvc allows clients to send HTTP POST requests with
@@ -31,6 +40,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 // handle certain HTTP requests for the DispatcherServlet
 @Controller
 public class VideoSvc implements VideoSvcApi {
+	
+	private void _Log(String log) {
+	    try {
+	         Logger.getLogger(getClass().getName()).log(
+	            Level.INFO, "LOG ->" + log);
+	       } catch (Exception err) {
+	         Logger.getLogger(getClass().getName()).log(
+	            Level.SEVERE, "Mensaje crítico...", err);
+	       }
+	}
 	
 	// An in-memory list that the servlet uses to store the
 	// videos that are sent to it by clients
@@ -57,6 +76,12 @@ public class VideoSvc implements VideoSvcApi {
 	//
 	@RequestMapping(value=VIDEO_SVC_PATH, method=RequestMethod.POST)
 	public @ResponseBody boolean addVideo(@RequestBody Video v){
+		//put v in JSON format
+		Gson videoJSON = new Gson();
+		String jsonstrig = videoJSON.toJson(v);
+		//log v
+		_Log(jsonstrig);
+		
 		return videos.add(v);
 	}
 	

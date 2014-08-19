@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="java" project="3-VideoControllerAndRetrofit" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="org.magnum.mobilecloud.controller.test.VideoSvcTest" time="0.001">
+    <testcase name="testVideoAddAndList" classname="org.magnum.mobilecloud.controller.test.VideoSvcTest" time="0.001"/>
+  </testsuite>
+  <testsuite name="org.magnum.mobilecloud.client.test.VideoSvcClientApiTest" time="0.3">
+    <testcase name="testVideoAddAndList" classname="org.magnum.mobilecloud.client.test.VideoSvcClientApiTest" time="0.3"/>
+  </testsuite>
+</testrun>
